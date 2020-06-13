@@ -26,6 +26,9 @@ function sequelizePlugin (fastify, opts, done) {
     // done
     return;
   });
+
+  // done
+  done();
 }
 
 // export the plugin

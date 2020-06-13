@@ -1,0 +1,41 @@
+{
+  "name": "sequelize-fastify",
+  "version": "1.0.0",
+  "description": "sequelize plugin for fastify",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsynlms/sequelize-fastify.git"
+  },
+  "keywords": [
+    "sequelize",
+    "fastify",
+    "fastify-plugin",
+    "sqlite",
+    "mysql",
+    "postgres",
+    "mssql"
+  ],
+  "author": "Huseyin ELMAS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hsynlms/sequelize-fastify/issues"
+  },
+  "homepage": "https://github.com/hsynlms/sequelize-fastify#readme",
+  "peerDependencies": {
+    "sequelize": "^5.21.12"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "fastify": "^2.14.1",
+    "install-peers": "^1.0.3",
+    "sequelize": "^5.21.12",
+    "tedious": "^8.3.0"
+  },
+  "dependencies": {
+    "fastify-plugin": "^1.6.1"
+  }
+}

@@ -59,6 +59,12 @@ fastify.register(
 });
 ```
 
+## Options
+| Name              | Type               | Default                             | Description                                                                                                          |
+| ---               | ---                | ---                                 | ---                                                                                                                  |
+| instance         | string | `sequelize`                                | A decorator instance name which will be available anywhere in the fastify server.                                                 |
+| sequelizeOptions         | object            | `{}`                                | Sequelize configuration object which will be passed to Sequelize instance while creating. Please see [API Reference](https://sequelize.org/master/class/lib/sequelize.js~Sequelize.html#instance-constructor-constructor) doc.                                      |
+
 ## Contribution
 Pull-requests are warmly welcomed.
 

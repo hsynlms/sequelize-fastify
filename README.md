@@ -1,6 +1,8 @@
 # sequelize-fastify
 > A simple and lightweight [Sequelize](https://sequelize.org/) plugin for [Fastify](https://github.com/fastify/fastify).
 
+[![NPM](https://nodei.co/npm/sequelize-fastify.png)](https://nodei.co/npm/sequelize-fastify/)
+
 `sequelize-fastify` has great support of sequelize **v5.x**. I will support that simple repository in future as much as I can. So will track any major Sequelize plugin update to give support of each updates as well.
 
 ## What is Sequelize?

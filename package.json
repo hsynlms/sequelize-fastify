@@ -1,6 +1,6 @@
 {
   "name": "sequelize-fastify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple and lightweight Sequelize plugin for Fastify.",
   "main": "src/index.js",
   "scripts": {
@@ -32,7 +32,6 @@
     "chalk": "^4.1.0",
     "fastify": "^2.14.1",
     "install-peers": "^1.0.3",
-    "sequelize": "^5.21.12",
     "tedious": "^8.3.0"
   },
   "dependencies": {

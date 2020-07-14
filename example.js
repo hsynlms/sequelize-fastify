@@ -1,12 +1,14 @@
-// get required node modules
-const fastify = require('fastify')();
-const sequelizeFastify = require('./src/index');
-const chalk = require('chalk');
+'use strict'
+
+// get required modules
+const fastify = require('fastify')()
+const sequelizeFastify = require('./src/index')
+const chalk = require('chalk')
 
 // defaults
 const defaults = {
   port: 3000
-};
+}
 
 // register the plugin
 fastify.register(
@@ -21,32 +23,32 @@ fastify.register(
       password: '',
       port: 1433,
       dialectOptions: {
-        encrypt: true,
-        trustedConnection: true,
-        requestTimeout: 30000 // 30 seconds
+        options: {
+          requestTimeout: 300000
+        }
       }
     }
   }
 )
-.ready(async () => {
-  try {
-    // first connection as test
-    const result = await fastify.db.authenticate();
+  .ready(async () => {
+    try {
+      // first connection as test
+      await fastify.db.authenticate()
 
-    // log
-    console.log(
-      chalk.green('Database connection is successfully established.')
-    );
+      // log
+      console.log(
+        chalk.green('Database connection is successfully established.')
+      )
 
-    // close the server
-    fastify.close();
-  } catch(err) {
-    // log the error
-    console.log(
-      chalk.red(`Connection could not established: ${err}`)
-    );
-  }
-});
+      // close the server
+      fastify.close()
+    } catch (err) {
+      // log the error
+      console.log(
+        chalk.red(`Connection could not established: ${err}`)
+      )
+    }
+  })
 
 // initialize the fastify server
 fastify.listen(defaults.port, () => {
@@ -55,4 +57,4 @@ fastify.listen(defaults.port, () => {
       chalk.black(`Fastify server is running on port: ${defaults.port}`)
     )
   )
-});
+})

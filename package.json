@@ -25,16 +25,13 @@
     "url": "https://github.com/hsynlms/sequelize-fastify/issues"
   },
   "homepage": "https://github.com/hsynlms/sequelize-fastify#readme",
-  "peerDependencies": {
-    "sequelize": "^5.21.12"
-  },
   "devDependencies": {
     "chalk": "^4.1.0",
-    "fastify": "^2.14.1",
-    "install-peers": "^1.0.3",
+    "fastify": "^3.0.2",
     "tedious": "^8.3.0"
   },
   "dependencies": {
-    "fastify-plugin": "^1.6.1"
+    "fastify-plugin": "^2.0.1",
+    "sequelize": "^6.3.3"
   }
 }

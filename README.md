@@ -3,7 +3,9 @@
 
 [![NPM](https://nodei.co/npm/sequelize-fastify.png)](https://nodei.co/npm/sequelize-fastify/)
 
-`sequelize-fastify` has great support of sequelize **v5.x**. I will support that simple repository in future as much as I can. So will track any major Sequelize plugin update to give support of each updates as well.
+`sequelize-fastify` has great support of sequelize **v6.x**. I will support that simple repository in future as much as I can. So will track any major Sequelize plugin update to give support of each updates as well.
+
+**Note:** `fastify v3` and `sequelize v6` compatibility shipped with v1.0.3
 
 ## What is Sequelize?
 Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication and more.

@@ -33,7 +33,7 @@ fastify.register(
       host: 'DATABASE_HOST_OR_SERVER',
       username: 'DATABASE_USER_NAME',
       password: 'DATABASE_USER_PASSWORD',
-      port: 1433,
+      port: DATABASE_PORT,
       dialectOptions: {
         encrypt: true,
         trustedConnection: true,

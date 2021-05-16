@@ -32,7 +32,7 @@
     "fastify": "^3.15.1",
     "snazzy": "^9.0.0",
     "standard": "^16.0.3",
-    "tedious": "^11.0.7"
+    "tedious": "^11.0.8"
   },
   "dependencies": {
     "fastify-plugin": "^3.0.0",

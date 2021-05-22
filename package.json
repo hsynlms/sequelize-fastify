@@ -31,6 +31,7 @@
   "devDependencies": {
     "chalk": "^4.1.1",
     "fastify": "^3.15.1",
+    "jest": "^26.6.3",
     "snazzy": "^9.0.0",
     "standard": "^16.0.3",
     "tedious": "^11.0.8"

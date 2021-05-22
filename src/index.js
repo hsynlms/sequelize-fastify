@@ -2,6 +2,7 @@
 
 const fastifyPlugin = require('fastify-plugin')
 const Sequelize = require('sequelize')
+const pkg = require('../package.json')
 
 const defaults = {
   instance: 'sequelize',
@@ -32,6 +33,6 @@ module.exports = fastifyPlugin(
   sequelizePlugin,
   {
     fastify: '3.x',
-    name: 'sequelize-fastify'
+    name: pkg.name
   }
 )

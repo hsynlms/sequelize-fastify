@@ -13,7 +13,15 @@ jobs:
           - 16
           - 14
           - 12
+    env:
+      DB_DATABASE: sequelize
+      DB_USER: root
+      DB_PASSWORD: root
     steps:
+      - name: Setup MySQL Database
+        run: |
+          sudo /etc/init.d/mysql start
+          mysql -e 'CREATE DATABASE IF NOT EXISTS ${{ env.DB_DATABASE }};' -u${{ env.DB_USER }} -p${{ env.DB_PASSWORD }}
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:

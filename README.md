@@ -17,7 +17,6 @@ $ npm install sequelize-fastify
 ```
 
 ## Usage
-Please find an usage of MSSQL example of the plugin below.
 
 ```js
 fastify.register(
@@ -25,36 +24,33 @@ fastify.register(
   {
     instance: 'db',
     sequelizeOptions: {
+      dialect: 'DIALECT_NAME', /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
       database: 'DATABASE_NAME',
-      dialect: 'mssql',
-      host: 'DATABASE_HOST_OR_SERVER',
       username: 'DATABASE_USER_NAME',
       password: 'DATABASE_USER_PASSWORD',
-      port: DATABASE_PORT,
-      dialectOptions: {
-        encrypt: true,
-        trustedConnection: true,
-        requestTimeout: 30000 // 30 seconds
+      options: {
+        host: 'DATABASE_HOST_OR_SERVER',
+        port: 'DATABASE_PORT'
       }
     }
   }
 )
-.ready(async () => {
-  try {
-    // first connection as test
-    const result = await fastify.db.authenticate()
+  .ready(async () => {
+    try {
+      // first connection
+      const result = await fastify.db.authenticate()
 
-    console.log(
-      chalk.green('Database connection is successfully established.')
-    )
-
-    fastify.close()
-  } catch(err) {
-    console.log(
-      chalk.red(`Connection could not established: ${err}`)
-    )
-  }
-})
+      console.log(
+        chalk.green('Database connection is successfully established.')
+      )
+    } catch(err) {
+      console.log(
+        chalk.red(`Connection could not established: ${err}`)
+      )
+    } finally {
+      fastify.close()
+    }
+  })
 ```
 
 ## Options

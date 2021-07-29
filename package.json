@@ -32,9 +32,9 @@
     "chalk": "^4.1.1",
     "fastify": "^3.19.2",
     "jest": "^27.0.6",
+    "mysql2": "^2.2.5",
     "snazzy": "^9.0.0",
-    "standard": "^16.0.3",
-    "tedious": "^11.4.0"
+    "standard": "^16.0.3"
   },
   "dependencies": {
     "fastify-plugin": "^3.0.0",

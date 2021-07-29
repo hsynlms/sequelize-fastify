@@ -19,7 +19,10 @@ function sequelizePlugin (fastify, opts, done) {
 
   // close sequelize database connection before shutdown
   // 'onClose' is triggered when fastify.close() is invoked to stop the server
-  fastify.addHook('onClose', async () => await sequelize.close())
+  fastify.addHook(
+    'onClose',
+    (instance, done) => sequelize.close().then(() => done())
+  )
 
   done()
 }

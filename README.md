@@ -57,4 +57,20 @@ fastify.register(
 | Name               | Type       | Default          | Description                                                                       |
 | ---                | ---        | ---              | ---                                                                               |
 | instance           | string     | `sequelize`      | A decorator instance name which will be available anywhere in the fastify server. |
-| sequelizeOptions   | object     | `{}`             | Sequelize configuration object which will be passed to Sequelize instance while creating. Please see [API Reference](https://sequelize.org/master/class/lib/sequelize.js~Sequelize.html#instance-constructor-constructor) doc. |
+| sequelizeOptions   | object     | `{}`             | Sequelize configuration object which will be passed to Sequelize instance while creating. Please see [API Reference] doc. |
+
+[API Reference]: https://sequelize.org/v6/class/src/sequelize.js~Sequelize.html#instance-constructor-constructor
+
+## Typescript
+
+In order to have typing for the fastify instance, you should follow the example below:
+
+```typescript
+import { Sequelize } from "sequelize-fastify";
+
+declare module "fastify" {
+  interface FastifyInstance {
+    [instance]: Sequelize;
+  }
+}
+```

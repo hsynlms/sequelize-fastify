@@ -13,7 +13,7 @@ Please check [official website](https://github.com/sequelize/sequelize) for more
 
 ## Installation
 ```
-$ npm install sequelize-fastify
+$ npm install sequelize-fastify --save
 ```
 
 ## Usage

@@ -21,7 +21,10 @@ function sequelizePlugin (fastify, opts, done) {
   // 'onClose' is triggered when fastify.close() is invoked to stop the server
   fastify.addHook(
     'onClose',
-    (instance, done) => sequelize.close().then(() => done())
+    (_, done) =>
+      sequelize
+        .close()
+        .finally(done)
   )
 
   done()

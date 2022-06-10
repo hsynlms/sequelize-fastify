@@ -33,7 +33,7 @@ function sequelizePlugin (fastify, opts, done) {
 module.exports = fastifyPlugin(
   sequelizePlugin,
   {
-    fastify: '3.x',
+    fastify: '4.x',
     name: pkg.name
   }
 )

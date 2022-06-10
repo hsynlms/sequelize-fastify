@@ -4,6 +4,8 @@
 [![Downloads](https://img.shields.io/npm/dm/sequelize-fastify.svg)](https://npmjs.com/sequelize-fastify)
 [![install size](https://packagephobia.com/badge?p=sequelize-fastify)](https://packagephobia.com/result?p=sequelize-fastify)
 
+**Note:** Fastify v4 support is shipped with v2.0.0.
+
 **Supported Sequelize versions:**
 
 - v6.x
@@ -21,8 +23,10 @@ $ npm install sequelize-fastify --save
 ## Usage
 
 ```js
-fastify.register(
-  require('sequelize-fastify'),
+const sequelizeFastify = require('sequelize-fastify')
+
+await fastify.register(
+  sequelizeFastify,
   {
     instance: 'db',
     sequelizeOptions: {

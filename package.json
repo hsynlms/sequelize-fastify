@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest --verbose -i test.js -t",
-    "lint": "npm run lint:standard",
-    "lint:standard": "standard --verbose | snazzy || exit 0"
+    "lint": "standard --verbose"
   },
   "repository": {
     "type": "git",
@@ -32,7 +31,6 @@
     "fastify": "4.0.0",
     "jest": "28.1.1",
     "mysql2": "2.3.3",
-    "snazzy": "^9.0.0",
     "standard": "17.0.0"
   },
   "dependencies": {

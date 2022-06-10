@@ -4,7 +4,9 @@
 [![Downloads](https://img.shields.io/npm/dm/sequelize-fastify.svg)](https://npmjs.com/sequelize-fastify)
 [![install size](https://packagephobia.com/badge?p=sequelize-fastify)](https://packagephobia.com/result?p=sequelize-fastify)
 
-`sequelize-fastify` has great support of sequelize **v6.x**. I will support that simple repository in future as much as I can. So will track any major Sequelize plugin update to give support of each updates as well.
+**Supported Sequelize versions:**
+
+- v6.x
 
 ## What is Sequelize?
 Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication and more.

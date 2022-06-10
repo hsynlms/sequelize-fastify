@@ -1,5 +1,5 @@
 # sequelize-fastify
-> A simple and lightweight [Sequelize](https://sequelize.org/) plugin for [Fastify](https://github.com/fastify/fastify).
+> A [Sequelize](https://sequelize.org/) plugin for [Fastify](https://github.com/fastify/fastify).
 
 [![Downloads](https://img.shields.io/npm/dm/sequelize-fastify.svg)](https://npmjs.com/sequelize-fastify)
 [![install size](https://packagephobia.com/badge?p=sequelize-fastify)](https://packagephobia.com/result?p=sequelize-fastify)

@@ -28,15 +28,15 @@
   },
   "homepage": "https://github.com/hsynlms/sequelize-fastify#readme",
   "devDependencies": {
-    "chalk": "^4.1.1",
-    "fastify": "^3.19.2",
-    "jest": "^27.0.6",
-    "mysql2": "^2.2.5",
+    "chalk": "4.1.2",
+    "fastify": "4.0.0",
+    "jest": "28.1.1",
+    "mysql2": "2.3.3",
     "snazzy": "^9.0.0",
-    "standard": "^16.0.3"
+    "standard": "17.0.0"
   },
   "dependencies": {
-    "fastify-plugin": "^3.0.0",
-    "sequelize": "^6.6.5"
+    "fastify-plugin": "^3.0.1",
+    "sequelize": "^6.20.1"
   }
 }

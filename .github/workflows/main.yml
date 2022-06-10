@@ -10,9 +10,9 @@ jobs:
       fail-fast: false
       matrix:
         node-version:
+          - 18
           - 16
           - 14
-          - 12
     env:
       DB_DATABASE: sequelize
       DB_USER: root

@@ -1,6 +1,6 @@
 {
   "name": "sequelize-fastify",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "a Sequelize plugin for Fastify.",
   "main": "src/index.js",
   "scripts": {

@@ -18,10 +18,8 @@ test('database connection', done => {
         database: 'sequelize',
         username: 'root',
         password: 'root',
-        options: {
-          host: 'localhost',
-          port: 3306
-        }
+        host: 'localhost',
+        port: 3306
       }
     }
   )

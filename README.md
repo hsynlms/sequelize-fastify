@@ -34,10 +34,8 @@ await fastify.register(
       database: 'DATABASE_NAME',
       username: 'DATABASE_USER_NAME',
       password: 'DATABASE_USER_PASSWORD',
-      options: {
-        host: 'DATABASE_HOST_OR_SERVER',
-        port: 'DATABASE_PORT'
-      }
+      host: 'DATABASE_HOST_OR_SERVER',
+      port: 'DATABASE_PORT'
     }
   }
 )
